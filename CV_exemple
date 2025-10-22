@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV – Fichier Exemple</title>
-  <style>
-    body {
+<style>
+.image-ronde{
+  width : 150px; height : 150px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+}
+
+.linkdIn{
+	
+	width : 30px; height : 30px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+	}
+	 body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background-color: #f9f9f9;
@@ -13,98 +25,48 @@
     }
 
     header {
-      background: linear-gradient(135deg, #007bff, #00bcd4);
+      background: linear-gradient(135deg, #007bff, #0000d4);
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 10px 10px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+	.header p1{
+		text-align: left;
+	}
+</style>
 
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: #007bff;
-      border-bottom: 2px solid #00bcd4;
-      padding-bottom: 5px;
-    }
-
-    .info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .info div {
-      flex: 1 1 45%;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 5px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #555;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Fichier Exemple</title>
+  
+  <body>
 
   <header>
-	<img src="Images/photo_identiter.PNG" alt="Photo de profil" class="photo-profil" align = left>
-    <h1>Fichier Exemple</h1>
-    <p>Exemple de Titre de profession à réalisé ou réalisais</p>
-	<p> Adresse postale :<a href = https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse/@47.7589391,7.3317377,17z/data=!3m1!4b1!4m6!3m5!1s0x47919b6531db8bb1:0xf00f4a4a5fe6176d!8m2!3d47.7589391!4d7.3317377!16s%2Fg%2F11c4s3ydb7?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D> exemple de lien google map</a> </p>
+	<img src="file://///uha.fr/Users/e2506243/Bureau/Capture%20d%E2%80%99%C3%A9cran%202025-10-21%20090523.png" alt="Photo de profil" class="image-ronde" align = left>
+    <h1>CV SICHARD Lommé</h1>
+    <p>Administrateur Réseaux</p>
+	<p> Adresse postale :<a href = https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse/@47.7589391,7.3317377,17z/data=!3m1!4b1!4m6!3m5!1s0x47919b6531db8bb1:0xf00f4a4a5fe6176d!8m2!3d47.7589391!4d7.3317377!16s%2Fg%2F11c4s3ydb7?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D> exemple de lien google map</a> </p1>
 	 <div>
-        <p><strong align = left>Email :</strong> alex.dupont@example.com | <strong align = right>Site web :</strong> <a href="https://alexdupont.dev">alexdupont.dev</a></p>
-        <p><strong align = left>Téléphone :</strong> +33 6 12 34 56 78 | <strong align = right>LinkedIn :</strong> <a href="#">linkedin.com/in/alexdupont</a></p>
-      </div>
+	 <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div style="text-align: left;"><strong align = left>(logo email(@))(Email :</strong> sichardlomme@gmail.com </div>
+		
+		<strong>(logo du site)Site web :</strong> <a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html"> Mon site internet</a></p1>
+        
+		<div style="text-align: right;"><strong align = left>(logo telephone)Téléphone :</strong> +33 7 71 13 47 74 |______________|</div>
+		<div style="text-align: right;"><img src="file://///uha.fr/Users/e2506243/Bureau/LinkedIn_logo_initials.png" alt= "logo linkdIn" class="linkdIn"> <strong>LinkedIn :</strong> <a href="#">linkedin.com/in/LomméSICHARD</a></p>
+      </div></div>
+	  <h2>Profil</h2>
+      <p>Développeur web passionné avec 4 ans d’expérience dans la création de sites et applications modernes. Expert en JavaScript, React et Node.js. Soucieux du détail et du design UX.</p>
+ 
+	  </div>
   </header>
 
   <main>
     <section class="info">
      
-    </section>
-
-    <section>
-      <h2>Profil</h2>
-      <p>Développeur web passionné avec 4 ans d’expérience dans la création de sites et applications modernes. Expert en JavaScript, React et Node.js. Soucieux du détail et du design UX.</p>
     </section>
 
     <section>
@@ -141,3 +103,4 @@
 
 </body>
 </html>
+  
