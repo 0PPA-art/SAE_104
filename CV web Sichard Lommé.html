@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <style>
+
+#conteneur_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 15fr));/* Colonnes dynamiques */
+  grid-template-rows: auto auto auto; /* 3 lignes */
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+
+  /* Définition des zones du grid */
+  grid-template-areas:
+    "Comp Exp Exp Exp"
+    "Form Exp Exp Exp"
+    "Hob . . .";
+}
+
 .image-ronde{
   width : 150px; height : 150px;
   border: none;
@@ -17,15 +34,47 @@
   -webkit-border-radius : 75px;
   border-radius : 75px;
 	}
+	 body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(320deg, #007bff, #FFFFd9);
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+    }
+	#Comp { grid-area: Comp;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px; }
+  
+  
+#Form {  grid-area: Form;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;}
+  
+  #Hob {  grid-area: Hob;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px}
+  
+  
+#Exp  {  grid-area: Exp;
+  background: #e3e3e3;
+  padding: 15px;
+  border-radius: 8px}
 	
-	.header p{
-	
-	}
-	#rectangle {
-  width  : 100px;
-  height : 50px;
-  background : green;
+	grid {
+	min-width: 1450px;
 }
+
+
+
 </style>
 
 
@@ -39,54 +88,119 @@
   <header>
 	<img src="file://///uha.fr/Users/e2506243/Bureau/Capture%20d%E2%80%99%C3%A9cran%202025-10-21%20090523.png" alt="Photo de profil" class="image-ronde" align = left>
     <h1>CV SICHARD Lommé</h1>
-    <p>Administrateur Réseaux</p>
-	<p> Adresse postale :<a href = https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse/@47.7589391,7.3317377,17z/data=!3m1!4b1!4m6!3m5!1s0x47919b6531db8bb1:0xf00f4a4a5fe6176d!8m2!3d47.7589391!4d7.3317377!16s%2Fg%2F11c4s3ydb7?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D> exemple de lien google map</a> </p>
-	 <div>
-        <p><strong align = left>(logo email(@))(Email :</strong> sichardlomme@gmail.com |___________| <strong align = right>(logo du site)Site web :</strong> <a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html"> Mon site internet</a></p>
-        <p><strong align = left>(logo telephone)Téléphone :</strong> +33 7 71 13 47 74 |______________|<img src="file://///uha.fr/Users/e2506243/Bureau/LinkedIn_logo_initials.png" alt= "logo linkdIn" class="linkdIn"> <strong align = right>LinkedIn :</strong> <a href="#">linkedin.com/in/LomméSICHARD</a></p>
-      <h2>Profil</h2>
-      <p>Développeur web passionné avec 4 ans d’expérience dans la création de sites et applications modernes. Expert en JavaScript, React et Node.js. Soucieux du détail et du design UX.</p>
- 
+
+    <h2>Administrateur Réseaux</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <!-- Colonne gauche -->
+    <div style="text-align: left;">
+        <strong>Adresse postale :</strong> <a href="https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse">Exemple de lien Google Map</a>
+        <div><strong>(logo email @) Email :</strong> sichardlomme@gmail.com</div>
+        <div><img src="file://///uha.fr/Users/e2506243/Bureau/LinkedIn_logo_initials.png" alt="Logo LinkedIn" class="linkdIn"> <strong>LinkedIn :</strong> <a href="#">linkedin.com/in/LomméSICHARD</a></div>
+		
+		<div><h2>Atout : </h2>
+	 <div><li><strong> Rigoureux</strong>
+	  <li><strong>Organisé</strong>
+	  <li><strong>Passionné</strong>
+	  <li><strong>Coopératif</strong>
+	  <li><strong>Autonome</strong></div>
+		
+	</div>
+	</div>
+
+    <!-- Colonne droite -->
+    <div style="text-align: right;">
+        <div><strong>Site web :</strong> <a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html">Mon site internet</a></div>
+        <div><strong>(logo téléphone) Téléphone :</strong> +33 7 71 13 47 74</div>
+   
+	  <div><h2>Profil :</h2></div>
+       
+	  <p>SICHARD Lommé, diplômé en BTS Système numérique, option informatique 
+	  et réseaux.<br>En formation de Réseaux et Télécommunication à l'IUT de Colmar <br>En recherche d'une entreprise pour une alternance, pour la 
+	  rentrée septembre 2026 à l'IUT de Colmar.</p>
 	  </div>
+ </div>
+	  
   </header>
 
-  <main>
+  <main id = "conteneur_grid">
     <section class="info">
      
     </section>
 
-    <section>
+
+    <section id="Exp">
+	
       <h2>Expérience professionnelle</h2>
       <ul>
-        <li><strong>Développeur Full Stack</strong> – WebInnov (2022–2025)<br>
-          Développement d’applications web avec React et Express.js, intégration d’API, maintenance du code, et supervision de 3 stagiaires.</li>
-        <li><strong>Développeur Front-End</strong> – Freelance (2020–2022)<br>
-          Création de sites vitrines et e-commerces responsives pour des clients variés (WordPress, Shopify, React).</li>
-      </ul>
+        <li><strong>Employé polyvalent</strong> – Burger King (Avril 2024 - Septembre 2025)
+        <li><strong>Stage Technicien maintenance informatique</strong> – Freelance (Mai 2022 - Juillet 2022)
+		</ul>
+	  
     </section>
 
-    <section>
-      <h2>Compétences</h2>
+   
+	<section id="Info">
+      <h2>Compétences informatique</h2>
       <ul>
         <li>HTML, CSS, JavaScript (ES6+)</li>
         <li>React, Node.js, Express</li>
         <li>Git, GitHub, CI/CD</li>
         <li>UX/UI Design (Figma, Tailwind)</li>
       </ul>
+	  
+    </section>
+	
+	<section id="Comp">
+      <h2>Compétences</h2>
+      <ul>
+        <li>Rédiger un cahier des charges, des spécifications techniques</li>
+        <li>Paramétrer un logiciel, un outil, un système numérique</li>
+        <li>Algorithmique</li>
+        <li>Méthodes Agiles SCRUM</li>
+		<li>Architecture technique de système d'information</li>
+		<li>Architecture web</li>
+		<li>Gestion de code source sous Git</li>
+		<li>Rédiger et mettre à jour la documentation technique</li>
+      </ul>
+	  
     </section>
 
-    <section>
+
+     <section id="Form">
       <h2>Formation</h2>
       <ul>
         <li><strong>Licence Informatique</strong> – Université de Lyon (2019–2022)</li>
       </ul>
     </section>
-  </main>
+	
+	<section id="Hob">
+      <h2>Hobby</h2>
+      <ul>
+        <li><strong>Les jeux d'echec</strong> – chess.com</li>
+      </ul>
+    </section>
+	
+	
+	<section id="Hob">
+      <h2>Centres d’intérêt</h2>
+      <ul>
+        <li><strong>Les jeux d'echec</strong> – chess.com</li>
+      </ul>
+    </section>
+	
+	<section id="Lang">
+      <h2>Langues</h2>
+      <ul>
+        <li><strong>Français & Tchétchène : </strong> – maternelle</li>
+		<li><strong> Anglais :</strong> – B2</li>
+		<li><strong>Allemand :</strong> – B1 </li>
+      </ul>
+    </section>
+
 
   <footer>
-    © 2025 Alex Dupont – CV en ligne
+    © 2025 Sichard Lommé - CV en ligne
   </footer>
-
+</main>
 </body>
 </html>
-  
