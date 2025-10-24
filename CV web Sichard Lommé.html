@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="fr">
-<style>
-
-#conteneur_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 15fr));/* Colonnes dynamiques */
-  grid-template-rows: auto auto auto; /* 3 lignes */
-  grid-gap: 10px;
-  padding: 10px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
 
   /* Définition des zones du grid */
   grid-template-areas:
+	"Imag Imag Imag Imag"
     "Comp Exp Exp Exp"
     "Form Exp Exp Exp"
     "Hob . . .";
+}
+
+.header-grid{				/*penser à faire un deuxieme grid*/
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 15fr));/* Colonnes dynamiques */
+  grid-template-rows: auto auto auto; /* 3 lignes */
+	align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .image-ronde{
@@ -34,19 +32,22 @@
   -webkit-border-radius : 75px;
   border-radius : 75px;
 	}
-	 body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+	 
 
     header {
-      background: linear-gradient(320deg, #007bff, #FFFFd9);
-      color: white;
-      text-align: center;
+	background: linear-gradient(320deg, #007bff, #FFFFd9);
       padding: 10px 10px;
     }
+	
+	body {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      /*background: linear-gradient(320deg, #007bff, #FFFFd9);*/
+      color: #333;
+    }
+	
+	
 	#Comp { grid-area: Comp;
   background: #ffffff;
   padding: 15px;
@@ -73,6 +74,12 @@
 	min-width: 1450px;
 }
 
+#Imag
+{
+grid-area: Imag;
+	https://e7.pngegg.com/pngimages/467/1016/png-clipart-desktop-background-miscellaneous-blue.png
+}
+
 
 
 </style>
@@ -85,7 +92,8 @@
   
   <body>
 
-  <header>
+  <header id = "Imag">
+  <img src="https://e7.pngegg.com/pngimages/467/1016/png-clipart-desktop-background-miscellaneous-blue.png">
 	<img src="file://///uha.fr/Users/e2506243/Bureau/Capture%20d%E2%80%99%C3%A9cran%202025-10-21%20090523.png" alt="Photo de profil" class="image-ronde" align = left>
     <h1>CV SICHARD Lommé</h1>
 
