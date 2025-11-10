@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <style>
 #conteneur_grid {
@@ -8,10 +7,10 @@
   
   /* Définition des zones du grid */
   grid-template-areas:
-    "Exp Exp Comp Comp"
-    "Form Form CompInfo CompInfo"
-    "Hob Hob Lang Lang"
-	"Foot . . .";
+    "Exp Exp Exp Exp"
+    "Form Form Dip Dip"
+    "CompInfo CompInfo Comp Comp"
+	"Hob Hob Lang Foot";
 	
 	gap: 10px;
       padding: 10px;
@@ -43,8 +42,11 @@
   }
 
 .image-ronde {
-  border-radius: 20px !important; /* ou 30px si tu veux plus rond */
-    overflow: hidden; /* évite que l’intérieur dépasse */
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #eaeaf5
 }
 
 .linkdIn{
@@ -70,6 +72,25 @@
       color: #333;
     }
 	
+	.section-flex{
+	margin:1rem 0
+	}
+
+.flexbox{
+display:flex;
+gap:1rem;
+flex-wrap:wrap
+}
+
+.flex-item{
+flex:1 1 220px;
+padding:1rem;
+border-radius:10px;
+min-width:200px
+}
+
+.flex-item h3{margin-top:0}
+	
 	/*-------------------------- partie main -----------------*/
 	.Comp { grid-area: Comp;
   padding: 15px;
@@ -90,6 +111,14 @@
   
   
 .Exp  {  grid-area: Exp;
+  padding: 15px;
+  border-radius: 8px}
+	
+	grid {
+	min-width: 1450px;
+}
+
+.Dip  {  grid-area: Dip;
   padding: 15px;
   border-radius: 8px}
 	
@@ -252,11 +281,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV – Fichier Exemple</title>
+  <title>Curriculum Vitae — SiCHARD Lommé</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
   
   <body>
-
-<header class="header-grid">
+<header class="header-grid" class = "image-ronde">
   <div class="header-photo card">
     <img
       src="C:\Users\sicha\Desktop\SAE\SAE_104\photo_identiter.PNG"
@@ -315,22 +345,27 @@
      <section class="Exp card">
       <h2>Expérience professionnelle</h2>
       <ul>
-        <li><strong>Employé polyvalent</strong> – Burger King - 36 Rue du Sauvage, 68100 Mulhouse - (Avril 2024 - Septembre 2025)</li>
+        <li><strong>Equipier polyvalent</strong> – Burger King - 36 Rue du Sauvage, 68100 Mulhouse - (Avril 2024 - Septembre 2025)</li>
         <li><strong>Stage Technicien maintenance</strong> – Qualtech IFBM - 7 Rue du Bois de la Champelle, 54500 Vandœuvre-lès-Nancy(Mai 2022 - Juillet 2022)</li>
 		<li><strong>Stage découvert</strong> – Beka - Av. des Jonquilles, 54500 Vandœuvre-lès-Nancy (Janvier 2017)</li>
       </ul>
     </section>
 
     <section class="CompInfo card">
+	<div class="flex-item">
       <h2>Compétences informatiques</h2>
       <ul>
-        <li>HTML, CSS, JavaScript (ES6+)</li>
-        <li>React, Node.js, Express</li>
-        <li>Git, GitHub</li>
+        <li>HTML, CSS</li>
+        <li>JavaScript, Node.js</li>
+		<li>C, C++, C#, java, LUA</li>
+        <li>Git, GitHub, Gitdesktop</li>
       </ul>
+	  </div>
     </section>
 
     <section class="Comp card">
+	 <div class="flexbox">
+        <div class="flex-item">
       <h2>Compétences</h2>
       <ul>
         <li>Méthodes Agiles (SCRUM)</li>
@@ -339,6 +374,7 @@
 		<li>Rédiger et mettre à jour la documentation technique</li>
 		<li>Rédiger un cahier des charges, des spécifications techniques)</li>
       </ul>
+	  </div>
     </section>
 
     <section class="Form card">
@@ -347,8 +383,20 @@
         <li>Licence Informatique – Université de Technologie de Colmar (2025/actuel)</li>
 		<li>BTS Système numérique option A( Informatique et Réseau) - Lycée Charles de Foucauld Nancy (2021-2023) </li>
 		<li>Bac Général spécialité mathématique, physique-chimie -  Lycée Henri Loritz Nancy (2019 - 2021)</li>
-      </ul>
+		<li>HACCP()Formation Burger King (Mai 2024 -  Avril 2024 )</li>
+		<li>SST(Salarié sauveteur secouriste du travail)  </li>
+	  </ul>
     </section>
+	
+	<section class = "Dip card">
+	<h2>Diplôme</h2>
+      <ul>
+	<li>BTS Système numérique option A( Informatique et Réseau) - Lycée Charles de Foucauld Nancy (2023) </li>
+	<li>Bac Général spécialité mathématique, physique-chimie -  Lycée Henri Loritz Nancy(2021) </li>
+	<li>HACCP()Avril 2024 </li>
+	<li>SST(Salarié sauveteur secouriste du travail)  </li>
+	</ul>
+	</section>
 
     <section class="Hob card">
       <h2>Centres d’intérêt</h2>
@@ -365,6 +413,7 @@
 
     <footer class="Foot card">
       © 2025 Sichard Lommé - CV en ligne
+	  <p><a href="index.html">Retour</a></p>
     </footer>
 </main>
 </body>
