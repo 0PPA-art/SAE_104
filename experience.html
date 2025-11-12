@@ -1,11 +1,52 @@
 <!doctype html>
 <html lang="fr">
 <style>
+/*0000000000000000000000  partie css dédier a l'index  000000000000000000000000000*/
+
+/*---------------------- partie grid ---------------------*/
 #conteneur_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
   
   /* Définition des zones du grid */
+  grid-template-areas:
+    "Exp Exp Exp Exp"
+    "Form Form Dip Dip"
+    "CompInfo CompInfo Comp Comp"
+	"Hob Lang Engl Foot";
+	
+	gap: 10px;
+      padding: 10px;
+      align-items: start;
+      background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
+      background-size: cover;
+      background-position: center;
+      min-width: 0; /* évite forcer la largeur hors écran */
+}
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* photo / titre / infos */
+    grid-template-rows: auto auto; /* 2 lignes principales */
+    grid-template-areas:
+	
+      "photo title title"
+	  "atout contact contact"
+      "profil profil profil";
+	  
+    gap: 10px;
+    padding: 10px;
+    align-items: start;
+    background-image: url("https://e7.pngegg.com/pngimages/467/1016/png-clipart-desktop-background-miscellaneous-blue.png");
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+  
+  #conteneur_grid_exp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
+  
   grid-template-areas:
     "Empl Empl Empl Empl"
     "Stag Stag Stag Stag"
@@ -14,25 +55,127 @@
 	gap: 10px;
       padding: 10px;
       align-items: start;
-      
       background-size: cover;
       background-position: center;
       min-width: 0; /* évite forcer la largeur hors écran */
-      color: black;
+	   flex: 2;
 }
+
+
+	/*-------------------------- partie pour mes grid index -----------------*/
+	.Comp { grid-area: Comp;
+  padding: 15px;
+  border-radius: 8px; }
+  
+  .CompInfo { grid-area: CompInfo;
+  padding: 15px;
+  border-radius: 8px; }
+  
+  
+.Engl{
+ grid-area: Engl;
+  padding: 15px;
+  border-radius: 8px
+}
+
+  
+  .Hob {  grid-area: Hob;
+  padding: 15px;
+  border-radius: 8px}
+  
+  
+.Exp  {  grid-area: Exp;
+  padding: 15px;
+  border-radius: 8px}
+	
+	grid {
+	min-width: 1450px;
+}
+
+.Dip  {  grid-area: Dip;
+  padding: 15px;
+  border-radius: 8px}
+
+
+.Lang  {  grid-area: Lang;
+  padding: 15px;
+  border-radius: 8px}
+
+.Foot{grid-area: Foot;
+  padding: 15px;
+  border-radius: 8px}
+  
+  .Form{grid-area: Form;
+  padding: 15px;
+  border-radius: 8px}
+  
+ 
+
+/--------------*partie pour le header-----------------*/
+
+  .header-photo {
+    grid-area: photo;
+    border-radius: 20px !important; /* ou 30px si tu veux plus rond */
+    overflow: hidden; /* évite que l’intérieur dépasse */
+  }
+  
+  
+  .header-title {
+    grid-area: title;
+    text-align: left;
+  }
+
+  .header-title h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .header-title h2 {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 1.1em;
+  }
+
+  .header-contact {
+    grid-area: contact;
+    text-align: right;
+  }
+
+  .header-atout {
+    grid-area: atout;
+    text-align: left;
+  }
+
+  .header-atout ul {
+    margin: 0;
+    padding-left: 5px;
+  }
+  
+/* --------Partie du header profile------- */
+  .header-profil {
+  grid-area: profil;
+  text-align: right;
+}
+
+  /*--------------------------------------------------------*/ 
+  
+ /*---------------FIN partie pour mes grids Index ----------------*/
+ 
+ /*--------------------------------------------------------*/ 
+
+/*--------------partie pour mes grids dans html experience ----------------*/
 
 .employe{
 	grid-area:Empl;
 	  padding: 15px;
   border-radius: 8px;
-  color: black;
   text-decoration :underline;
   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("BK_image_fond.jpg");
 }
 .stage {  grid-area: Stag;
   padding: 15px;
   border-radius: 8px;
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(0,0,0,0.3)), url("Qualtech_img_fond.png");
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("Qualtech_img_fond.png");
   color: black;
    background-size: cover;
   position: relative;
@@ -44,8 +187,282 @@
   padding: 15px;
   border-radius: 8px;
   background: rgba(250, 50, 0, 0.55);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("OIP.webp");
   color: black;}
-  /* ---------- Partie du animation pour le header--------- */
+  /*--------------------------------------------------------*/ 
+  
+ /*---------------FIN partie pour mes grids Exp ----------------*/
+ 
+ /*--------------------------------------------------------*/ 
+
+/*---------------------- FIN partie grid ---------------------*/
+   
+:root {
+--police: "Inter", sans-serif;
+}
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: var(--police);
+}
+
+
+body {
+background: var(--fond);
+color: var(--texte);
+
+margin : 0;
+	background: #0d0d0d;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3rem;
+padding: 3rem;
+}
+
+
+.hero-header {
+display: flex;
+gap: 2rem;
+padding: 2rem;
+background: var(--bloc);
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+.photo-rond {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid var(--accent);
+}
+
+
+.flex-container {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+
+.flex-item {
+flex: 1 1 250px;
+background: var(--bloc);
+padding: 1rem;
+border-radius: 12px;
+border: 1px solid #ddd;
+}
+
+
+footer {
+text-align: center;
+padding: 2rem;
+color: #555;
+}
+
+
+@media (max-width: 700px) {
+.menu-principal {
+flex-wrap: wrap;
+gap: .5rem;
+}
+}
+
+/*00000000000000000000000 Fin de partie dédier à l'index 000000000000000000000000*/
+
+
+/*-------------- partie pour le li ----------*/
+
+/* On masque l'input */
+.toggle {
+  display: none;
+}
+
+/* Le LI cliquable */
+.titre-li {
+  display: block;
+  padding: 12px;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+}
+
+/* Contenu masqué par défaut */
+.contenu-li {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease;
+  padding: 0 10px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+/* Quand le checkbox est coché → déplier */
+.toggle:checked ~ .contenu-li {
+  max-height: 1000px; /* une valeur haute pour le déploiement */
+  padding: 10px;
+}
+
+.bloc-flex {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Les images */
+.images-exp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images-exp img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/*-------------- FIN partie pour le li ----------*/
+
+
+/*------------- partie pour mes titre h1------------*/
+
+h1 {
+font-size: 4rem;
+position: relative;
+text-transform: uppercase;
+letter-spacing: 4px;
+transition: color 0.3s ease;
+}
+
+h1::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+height: 4px;
+width: 0%;
+background: linear-gradient(90deg, #00e5ff, #8c00ff);
+transition: width 0.4s ease;
+}
+
+
+h1:hover {
+color: #00e5ff;
+}
+
+
+h1:hover::after {
+width: 100%;
+}
+/*------------- Fin partie pour mes titre h1 ------------*/
+
+/*------------- partie pour mes titre h2------------*/
+
+h2 {
+position: relative;
+text-transform: uppercase;
+letter-spacing: 4px;
+transition: color 0.3s ease;
+}
+
+h2::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+height: 4px;
+width: 0%;
+background: linear-gradient(90deg, #00e5ff, #8c00ff);
+transition: width 0.4s ease;
+}
+
+
+h2:hover {
+color: #00e5ff;
+}
+
+
+h2:hover::after {
+width: 100%;
+}
+/*------------- Fin partie pour mes titre h2 ------------*/
+
+/*------------- partie pour mes lien ------------*/
+
+a {
+font-size: 1rem;
+color: #bbb;
+text-decoration: none;
+position: relative;
+margin: 0 1rem;
+transition: color 0.3s ease;
+}
+
+a::before {
+content: "";
+position: absolute;
+left: 50%;
+top: 50%;
+width: 0%;
+height: 0%;
+background: radial-gradient(circle, rgba(100, 0, 255, 0.1), transparent);
+transform: translate(-50%, -50%);
+border-radius: 50%;
+transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+}
+
+a:hover {
+color: #0000ff;
+}
+
+a:hover::before {
+width: 180%;
+height: 180%;
+opacity: 1;
+}
+
+/*------------- Fin partie pour mes lien ------------*/
+
+#fond{
+    height : 100vh;
+    width : 100vw;
+    position : fixed;
+    top:0px;
+    left : 0px;
+    z-index: -10;
+}
+
+#main{
+    overflow:scroll;
+    height : 100vh;
+}
+
+ 
+  /* ---------- Partie pour mes paragraphe --------- */
+  
+  p {
+	background-color : silver;
+  }
+  
+   /*--------------------------------------------------------*/ 
+  
+    /* ---------- FIN de Partie pour mes paragraphe --------- */
+	
+	 /*--------------------------------------------------------*/ 
+  
+  
+  /* ---------- Partie du animation pour le html--------- */
 
 @keyframes pulseBorder {
   from { box-shadow: 0 0 5px #00f0ff; border-color: #00f0ff; }
@@ -62,7 +479,7 @@
   }
 }
 
-.card {
+.card1 {
   position: relative;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
@@ -79,13 +496,13 @@
 }
 
 /* petit effet de zoom au survol */
-.card:hover {
+.card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
 }
 
 /* Effet lumineux de balayage */
-.card::before{
+.card1::before{
       content: "";
       position: absolute;
       top: 0;
@@ -98,31 +515,26 @@
     }
 
 /* ✨ Animation activée seulement au survol */
-.card:hover::before {
+.card1:hover::before {
   animation: shine 1.2s ease-in-out;
   opacity: 1;
 }
 
 
   .header-profil p {margin: 0;}
-  .main
 
-  a {
-    color: #cce7ff;
-    text-decoration: none;}
-
-  a:hover {text-decoration: underline;}
   
-  .card:nth-child(1):hover::before { animation-delay: 0s; }
-.card:nth-child(2):hover::before { animation-delay: 0.1s; }
-.card:nth-child(3):hover::before { animation-delay: 0.2s; }
-.card:nth-child(4):hover::before { animation-delay: 0.3s; }
-.card:nth-child(5):hover::before { animation-delay: 0.4s; }
+  .card1:nth-child(1):hover::before { animation-delay: 0s; }
+.card1:nth-child(2):hover::before { animation-delay: 0.1s; }
+.card1:nth-child(3):hover::before { animation-delay: 0.2s; }
+.card1:nth-child(4):hover::before { animation-delay: 0.3s; }
+.card1:nth-child(5):hover::before { animation-delay: 0.4s; }
 
 /* texte et liens */
     a { color: inherit; text-decoration: underline; }
     h2,h3 { margin: 6px 0; }
-
+	
+/*--------------Fin de l'animation balayage ----------------*/
 
 </style>
 
@@ -132,27 +544,45 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Expériences — SICHARD Lommé</title>
   <link rel="stylesheet" href="style.css">
+   <link href="test.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
+
+	<img id=fond src="R (2).png">
   <header class="mini-header" >
     <a href="index.html">← Retour au CV</a>
     <h1>Expériences professionnelles détaillées</h1>
   </header>
+  
+  
   <main>
-    <section id="emplois" class = "employe card" style = "font-family: 'Verdana';">
+    <section id="emplois" class = "employe card1" style = "font-family: 'Verdana';">
       <h2><strong>Equipier polyvalent</strong></h2>
       <p>Période : Avril 2024 - Septembre 2025</p>
       <p>Poste : Equipier polyvalent — Responsabilités : </p>
 	  <ul>
-	  <li>Equipier sur bord à burger</li> 
+	  <li>
+	  
+	  <input type="checkbox" id="exp1" class="toggle">
+        <label for="exp1" class="titre-li">Equipier sur bord à burger</label>
+
+        <div class="contenu-li">
+            <p>Contenu / grid / informations…</p> </div>
+			
+			<div class="images-exp">
+                    <img src="image sup BK.jpg" alt="image 1">
+                </div>
+	  </li> 
 	  <li>approvisionnement/préparation</li>
 	  <li>assistance comptoir & préparation de plateau service</li> 
 	  <li>entretient des locaux</li> <li>Equipier ouverture/fermeture.</li>
       </ul>
-	  <p>Coordonnées entreprise : Restaurant Burger King — 36 rue Sauvage, 68100 MULHOUSE <a href="https://www.entreprise-x.example" target="_blank" rel="noopener">site web</a></p>
+	  <p><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47919b582551461f:0x98144434efc2ec07?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener">Coordonnées entreprise : Restaurant Burger King — 36 rue Sauvage, 68100 MULHOUSE</a></p>
     </section>
 
-    <section id="stage2" class ="stage card" style = "font-family: 'Verdana';">
+    <section id="stage2" class ="stage card1" style = "font-family: 'Verdana';">
       <h2>Stage Technicien maintenance informatique</h2>
       <p>Période : mai 2022 - juillet 2022</p>
       <p>Responsabilités : 
@@ -162,10 +592,11 @@
 	  <li>aide à la Gestion de park informatique</li>
 	  <ul>
 	  </p>
-      <p>Coordonnées : Qualtech IFBM image logo à ajouter — <a href="https://www.society.example" target="_blank" rel="noopener">site web</a></p>
+      <p><a href="https://www.google.com/maps/place/Qualtech+(Vandoeuvre-Lès-Nancy)/@48.6511813,6.1330517,17z/data=!3m1!4b1!4m6!3m5!1s0x4794a23dfc4f8b0d:0x9ec89e335bf91e77!8m2!3d48.6511778!4d6.1356266!16s%2Fg%2F1tfn1nqw?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"> Coordonnées : Qualtech IFBM image logo à ajouter </a></p>
     </section>
 	
-	<section id="stage1" class = "Dec card" style = "font-family: 'Verdana';">
+	<section id="stage1" class = "Dec card1" style = "font-family: 'Verdana';">
+	
       <h2>Stage découverte </h2>
       <p>Période : Janvier 2017</p>
       <p>Responsabilités : 
@@ -175,12 +606,13 @@
 	  <li>assisatance au client</li>
 	  <ul>
 	  </p>
-      <p>Coordonnées : Beka — <a href="https://www.society.example" target="_blank" rel="noopener">site web</a></p>
+      <p><a href="https://www.google.com/maps/place/Beka+Market/@48.6604741,6.1808912,17z/data=!3m1!4b1!4m6!3m5!1s0x47949893116467fd:0x1b6dcd66937e849a!8m2!3d48.6604706!4d6.1834661!16s%2Fg%2F11ddwwzdpv?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"> Coordonnées : Beka </a></p>
     </section>
   </main>
   <footer>
     <p><a href="index.html">Retour</a></p>
   </footer>
 </body>
+
 </html>
-</html>
+
