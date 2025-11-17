@@ -13,15 +13,17 @@
     "Exp Exp Exp Exp"
     "Form Form Dip Dip"
     "CompInfo CompInfo Comp Comp"
-	"Hob Lang Engl Foot";
+	"Hob Lang . ."
+	"Foot Foot Foot Foot";
 	
 	gap: 10px;
-      padding: 10px;
-      align-items: start;
-      background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
-      background-size: cover;
-      background-position: center;
-      min-width: 0; /* évite forcer la largeur hors écran */
+    padding: 10px;
+    align-items: start;
+    background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
+    background-size: cover;
+    background-position: center;
+    min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 100px;
 }
 /*---------------------- partie grid du header---------------------*/
   .header-grid {
@@ -29,10 +31,9 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* photo / titre / infos */
     grid-template-rows: auto auto; /* 2 lignes principales */
     grid-template-areas:
-	
-      "photo title title"
-	  "atout contact contact"
-      "profil profil profil";
+	"NAV NAV NAV"
+    "photo title title"
+	"atout profil Engl";
 	  
     gap: 10px;
     padding: 10px;
@@ -40,7 +41,10 @@
     background-image: url("https://e7.pngegg.com/pngimages/467/1016/png-clipart-desktop-background-miscellaneous-blue.png");
     background-size: cover;
     background-position: center;
+	min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 50px;
   }
+  /*---------------------- partie grid du fichier html experience---------------------*/
   
   #conteneur_grid_exp {
   display: grid;
@@ -52,44 +56,40 @@
     "Dec Dec Dec Dec";
 	
 	gap: 10px;
-      padding: 10px;
-      align-items: start;
-      background-size: cover;
-      background-position: center;
-      min-width: 0; /* évite forcer la largeur hors écran */
-	   flex: 2;
+    padding: 10px;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 50px;
 }
-
+/*---------------------- FIN partie grid du fichier html experience---------------------*/
 
 	/*-------------------------- partie pour mes grid index -----------------*/
-	.Comp { grid-area: Comp;
+.Comp { grid-area: Comp;
   padding: 15px;
   border-radius: 8px; }
   
-  .CompInfo { grid-area: CompInfo;
+.CompInfo { grid-area: CompInfo;
   padding: 15px;
   border-radius: 8px; }
-  
-  
-.Engl{
- grid-area: Engl;
-  padding: 15px;
-  border-radius: 8px
-}
+ 
+.contact {
+    grid-area: contact;
+    text-align: right;
+  }
+ 
 
-  
-  .Hob {  grid-area: Hob;
+.Hob {  grid-area: Hob;
   padding: 15px;
   border-radius: 8px}
   
   
 .Exp  {  grid-area: Exp;
   padding: 15px;
-  border-radius: 8px}
+  border-radius: 8px
+  }
 	
-	grid {
-	min-width: 1450px;
-}
 
 .Dip  {  grid-area: Dip;
   padding: 15px;
@@ -104,7 +104,7 @@
   padding: 15px;
   border-radius: 8px}
   
-  .Form{grid-area: Form;
+.Form{grid-area: Form;
   padding: 15px;
   border-radius: 8px}
   
@@ -112,69 +112,83 @@
 
 /*--------------*partie pour le header index -----------------*/
 
-  .header-photo {
-    grid-area: photo;
-    border-radius: 20px !important; /* ou 30px si tu veux plus rond */
-    overflow: hidden; /* évite que l’intérieur dépasse */
-  }
-  
-  .hero-header {
-display: flex;
-gap: 2rem;
-padding: 2rem;
-background: var(--bloc);
-align-items: center;
-flex-wrap: wrap;
+/* --------Partie du header profile------- */
+.header-profil {
+  grid-area: profil;
+  text-align: left;
 }
 
-  .header-title {
-    grid-area: title;
+
+.header-nav{
+  grid-area: NAV;
+}
+
+.header-photo {
+	grid-area: photo;
+	border-radius: 20px !important; /* ou 30px si tu veux plus rond */
+	overflow: hidden; /* évite que l’intérieur dépasse */
+}
+
+ 
+.Engl{
+ grid-area: Engl;
+  padding: 15px;
+  border-radius: 8px
+}
+
+.header-title {
+	grid-area: title;
     text-align: left;
   }
-
-  .header-title h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-
-  .header-title h2 {
-    margin: 5px 0;
-    font-weight: 400;
-    font-size: 1.1em;
-  }
-
-  .header-contact {
-    grid-area: contact;
-    text-align: right;
-  }
-
-  .header-atout {
+  
+.header-atout {
     grid-area: atout;
     text-align: left;
   }
 
-  .header-atout ul {
+.header-title h1 {
+    margin: 0;
+    word-wrap: break-word;
+	font-size: clamp(14px, 2vw, 20px);
+  }
+
+  
+.hero-header {
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+	background: var(--bloc);
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header-title h2 {
+    font-weight: 400;
+    word-wrap: break-word;
+	font-size: clamp(14px, 2vw, 20px);
+  }
+
+
+
+
+.header-atout ul {
     margin: 0;
     padding-left: 5px;
   }
   
-/* --------Partie du header profile------- */
-  .header-profil {
-  grid-area: profil;
-  text-align: right;
-}
 
-  /*--------------------------------------------------------*/ 
+
+/*--------------------------------------------------------*/ 
   
- /*---------------FIN partie pour mes grids Index ----------------*/
+/*---------------FIN partie pour mes grids Index ----------------*/
  
- /*--------------------------------------------------------*/ 
+/*--------------------------------------------------------*/ 
 
 /*--------------partie pour mes grids dans html experience ----------------*/
 
 .employe{
 	grid-area:Empl;
-	  padding: 15px;
+	padding: 15px;
   border-radius: 8px;
   text-decoration :underline;
   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("BK_image_fond.jpg");
@@ -223,10 +237,10 @@ color: var(--texte);
 
 margin : 0;
 	background: #ffffff;
-font-family: Arial, sans-serif;
-display: flex;
-flex-direction: column;
-align-items: center;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 
@@ -242,8 +256,9 @@ flex-wrap: wrap;
 
 
 .photo-rond {
-width: 150px;
-height: 150px;
+width: 100%;
+max-width : 150px;
+height: auto;
 border-radius: 50%;
 object-fit: cover;
 border: 4px solid var(--accent);
@@ -278,6 +293,9 @@ color: #555;
 .menu-principal {
 flex-wrap: wrap;
 gap: .5rem;
+ h1 {
+    font-size: 1.8rem;
+  }
 }
 }
 
@@ -327,7 +345,10 @@ gap: .5rem;
 
 /* Les images */
 .images-exp {
+	width: 100%;
+  height: auto;
   flex: 1;
+  object-fit: cover; 
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -335,8 +356,10 @@ gap: .5rem;
 
 .images-exp img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
+  display: block;
 }
 
 /*-------------- FIN partie pour le li ----------*/
@@ -384,10 +407,10 @@ transition: color 0.3s ease;
 
 h2::after {
 content: "";
-position: absolute;
+margin: 15px;
 left: 0;
 bottom: -5px;
-height: 4px;
+height: auto;
 width: 0%;
 background: linear-gradient(90deg, #00e5ff, #8c00ff);
 transition: width 0.4s ease;
