@@ -13,8 +13,9 @@
     "Exp Exp Exp Exp"
     "Form Form Dip Dip"
     "CompInfo CompInfo Comp Comp"
-	"Hob Lang . ."
+	"Hob Hob Lang Lang"
 	"Foot Foot Foot Foot";
+	
 	
 	gap: 10px;
     padding: 10px;
@@ -46,14 +47,15 @@
   }
   /*---------------------- partie grid du fichier html experience---------------------*/
   
-  #conteneur_grid_exp {
+#conteneur_grid_exp {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
   
   grid-template-areas:
     "Empl Empl Empl Empl"
     "Stag Stag Stag Stag"
-    "Dec Dec Dec Dec";
+    "Dec Dec Dec Dec"
+	"Foot Foot Foot Foot";
 	
 	gap: 10px;
     padding: 10px;
@@ -63,9 +65,27 @@
     min-width: 0; /* évite forcer la largeur hors écran */
 	flex: 1 1 50px;
 }
+/*---------------------- partie grid du footer---------------------*/
+#conteneur_grid_Foot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
+  
+  grid-template-areas:
+    "Lien Lien contact contact";
+	
+	gap: 10px;
+    padding: 10px;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 50px;
+}
+/*---------------------- FIN partie grid du footer---------------------*/
+
 /*---------------------- FIN partie grid du fichier html experience---------------------*/
 
-	/*-------------------------- partie pour mes grid index -----------------*/
+/*-------------------------- partie pour mes grid index -----------------*/
 .Comp { grid-area: Comp;
   padding: 15px;
   border-radius: 8px; }
@@ -74,11 +94,7 @@
   padding: 15px;
   border-radius: 8px; }
  
-.contact {
-    grid-area: contact;
-    text-align: right;
-  }
- 
+
 
 .Hob {  grid-area: Hob;
   padding: 15px;
@@ -125,10 +141,16 @@
 
 .header-photo {
 	grid-area: photo;
-	border-radius: 20px !important; /* ou 30px si tu veux plus rond */
+	border-radius: 30px !important; /* ou 30px si tu veux plus rond */
 	overflow: hidden; /* évite que l’intérieur dépasse */
 }
 
+.photo-rond {
+max-width : 150px;
+border-radius: 30px;
+object-fit: cover;
+border: 4px solid var(--accent);
+}
  
 .Engl{
  grid-area: Engl;
@@ -168,14 +190,22 @@
 	font-size: clamp(14px, 2vw, 20px);
   }
 
-
-
-
 .header-atout ul {
     margin: 0;
     padding-left: 5px;
   }
+
+/* --------Partie du footer------- */
+.contact {
+    grid-area: contact;
+    text-align: left;
+  }
   
+.Lien {
+    grid-area: Lien;
+    text-align: left;
+  }
+/* --------FIN Partie du footer------- */
 
 
 /*--------------------------------------------------------*/ 
@@ -255,14 +285,6 @@ flex-wrap: wrap;
 
 
 
-.photo-rond {
-width: 100%;
-max-width : 150px;
-height: auto;
-border-radius: 50%;
-object-fit: cover;
-border: 4px solid var(--accent);
-}
 
 
 .flex-container {
@@ -287,12 +309,12 @@ padding: 2rem;
 color: #555;
 }
 
-
-
+	
 @media (max-width: 700px) {
-.menu-principal {
-flex-wrap: wrap;
-gap: .5rem;
+      
+	  .menu-principal {
+		flex-wrap: wrap;
+		gap: .5rem;}
  h1 {
     font-size: 1.8rem;
   }
@@ -550,7 +572,7 @@ opacity: 1;
   opacity: 1;
 }
   
-  .card:nth-child(1):hover::before { animation-delay: 0s; }
+.card:nth-child(1):hover::before { animation-delay: 0s; }
 .card:nth-child(2):hover::before { animation-delay: 0.1s; }
 .card:nth-child(3):hover::before { animation-delay: 0.2s; }
 .card:nth-child(4):hover::before { animation-delay: 0.3s; }
@@ -559,16 +581,7 @@ opacity: 1;
   /* -----------------fin du Animation du header ------------------- */
 
 
-  @media (max-width: 800px){
-      .header-grid { grid-template-columns: 1fr; grid-template-areas: "photo" "title" "contact" "profil"; text-align:center; }
-      #conteneur_grid { grid-template-columns: 1fr; grid-template-areas: "Form" "CompInfo" "Comp" "Hob" "Lang" "Exp" "Foot"; min-width: 0; }
-      .card { color: #111; background: rgba(255,255,255,0.9); border-color: #00aaff; }
-      .card::before { background: linear-gradient(120deg, transparent, rgba(0,0,0,0.06), transparent); }
-	  
-	  .menu-principal {
-		flex-wrap: wrap;
-		gap: .5rem;}
-    }
+
   
   
   
