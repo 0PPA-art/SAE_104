@@ -65,6 +65,34 @@
     min-width: 0; /* évite forcer la largeur hors écran */
 	flex: 1 1 50px;
 }
+
+/*---------------------- FIN partie grid du fichier html experience---------------------*/
+
+/*---------------------- partie grid du fichier html Diplôme---------------------*/
+  
+#conteneur_grid_Dip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
+  
+  grid-template-areas:
+    "SST SST HACCP HACCP"
+    "BTS BTS BTS BTS"
+    "Bac Bac Bac Bac"
+	"IUT IUT IUT IUT"
+	"Foot Foot Foot Foot";
+	
+	gap: 10px;
+    padding: 10px;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 50px;
+}
+
+/*---------------------- FIN partie grid du fichier html Diplôme---------------------*/
+
+
 /*---------------------- partie grid du footer---------------------*/
 #conteneur_grid_Foot {
   display: grid;
@@ -82,8 +110,6 @@
 	flex: 1 1 50px;
 }
 /*---------------------- FIN partie grid du footer---------------------*/
-
-/*---------------------- FIN partie grid du fichier html experience---------------------*/
 
 /*-------------------------- partie pour mes grid index -----------------*/
 .Comp { grid-area: Comp;
@@ -126,7 +152,7 @@
   
  
 
-/*--------------*partie pour le header index -----------------*/
+/*--------------FIN partie pour le header index -----------------*/
 
 /* --------Partie du header profile------- */
 .header-profil {
@@ -245,6 +271,59 @@ border: 4px solid var(--accent);
  /*---------------FIN partie pour mes grids Exp ----------------*/
  
  /*--------------------------------------------------------*/ 
+ 
+ 
+ 
+/*--------------partie pour mes grids dans html Diplôme ----------------*/
+
+.Bac{
+	grid-area:Bac;
+	padding: 15px;
+  border-radius: 8px;
+  text-decoration :underline;
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("image/logo-loritz.png");
+}
+.BTS {
+	grid-area: BTS;
+	padding: 15px;
+	border-radius: 8px;
+	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("image/logo.svg");
+	color: black;
+	background-size: cover;
+	position: relative;
+  }
+
+  
+.SST{
+  grid-area: SST;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(250, 50, 0, 0.55);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("OIP.webp");
+  color: black;}
+  
+.HACCP{
+	  grid-area: HACCP;
+	  padding: 15px;
+	  border-radius: 8px;
+	  background: rgba(250, 50, 0, 0.55);
+	  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("image/leader-academy.png");
+	  color: black;}
+	  
+.IUT{
+	  grid-area: IUT;
+	  padding: 15px;
+	  border-radius: 8px;
+	  background: rgba(250, 50, 0, 0.55);
+	  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("image/iut-colmar.jpg");
+	  color: black;}
+
+  /*--------------------------------------------------------*/ 
+  
+ /*---------------FIN partie pour mes grids Diplôme ----------------*/
+ 
+ /*--------------------------------------------------------*/ 
+ 
 
 /*---------------------- FIN partie grid ---------------------*/
    
