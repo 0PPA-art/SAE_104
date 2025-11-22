@@ -18,7 +18,7 @@
 	
 	
 	gap: 10px;
-    padding: 10px;
+    padding: 5px;
     align-items: start;
     background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
     background-size: cover;
@@ -33,7 +33,7 @@
     grid-template-rows: auto auto; /* 2 lignes principales */
     grid-template-areas:
 	"NAV NAV NAV"
-    "photo title title"
+    "photo title ."
 	"atout profil Engl";
 	  
     gap: 10px;
@@ -43,19 +43,42 @@
     background-size: cover;
     background-position: center;
 	min-width: 0; /* évite forcer la largeur hors écran */
-	flex: 1 1 50px;
+	flex: 1 1 100px;
   }
   /*---------------------- partie grid du fichier html experience---------------------*/
   
 #conteneur_grid_exp {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Colonnes dynamiques */
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));/* Colonnes dynamiques */
   
   grid-template-areas:
     "Empl Empl Empl Empl"
     "Stag Stag Stag Stag"
     "Dec Dec Dec Dec"
 	"Foot Foot Foot Foot";
+	
+	gap: 10px;
+    padding: 10px;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    min-width: 0; /* évite forcer la largeur hors écran */
+	flex: 1 1 50px;
+}
+
+/*---------------------- FIN partie grid du fichier html experience---------------------*/
+
+  /*---------------------- partie grid du fichier html experience---------------------*/
+  
+#conteneur_grid_form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));/* Colonnes dynamiques */
+  
+  grid-template-areas:
+    "SST HACCP"
+	"IUT BTS"
+    "Bac Bac "
+	"Foot Foot";
 	
 	gap: 10px;
     padding: 10px;
@@ -78,7 +101,6 @@
     "SST SST HACCP HACCP"
     "BTS BTS BTS BTS"
     "Bac Bac Bac Bac"
-	"IUT IUT IUT IUT"
 	"Foot Foot Foot Foot";
 	
 	gap: 10px;
@@ -110,6 +132,7 @@
 	flex: 1 1 50px;
 }
 /*---------------------- FIN partie grid du footer---------------------*/
+
 
 /*-------------------------- partie pour mes grid index -----------------*/
 .Comp { grid-area: Comp;
@@ -177,10 +200,15 @@ border-radius: 30px;
 object-fit: cover;
 border: 4px solid var(--accent);
 }
- 
+
+.logo {
+max-width : 50px;
+object-fit: cover;
+border: 4px solid var(--accent);
+}
+
 .Engl{
  grid-area: Engl;
-  padding: 15px;
   border-radius: 8px
 }
 
@@ -227,10 +255,12 @@ border: 4px solid var(--accent);
     text-align: left;
   }
   
+  
 .Lien {
     grid-area: Lien;
     text-align: left;
   }
+
 /* --------FIN Partie du footer------- */
 
 
@@ -247,24 +277,24 @@ border: 4px solid var(--accent);
 	padding: 15px;
   border-radius: 8px;
   text-decoration :underline;
-  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("BK_image_fond.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("image/BK_image_fond.jpg");
 }
 .stage {  grid-area: Stag;
   padding: 15px;
   border-radius: 8px;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("Qualtech_img_fond.png");
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("image/Qualtech_img_fond.png");
   color: black;
    background-size: cover;
   position: relative;
   }
 
   
-  .Dec{
-   grid-area: Dec;
+.Dec{
+  grid-area: Dec;
   padding: 15px;
   border-radius: 8px;
   background: rgba(250, 50, 0, 0.55);
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("OIP.webp");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("image/Capture d’écran 2025-11-22 101039.png");
   color: black;}
   /*--------------------------------------------------------*/ 
   
@@ -287,7 +317,7 @@ border: 4px solid var(--accent);
 	grid-area: BTS;
 	padding: 15px;
 	border-radius: 8px;
-	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("image/logo.svg");
+	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(100,100,100,200)), url("image/Capture d’écran 2025-11-22 101232.png");
 	color: black;
 	background-size: cover;
 	position: relative;
@@ -299,7 +329,7 @@ border: 4px solid var(--accent);
   padding: 15px;
   border-radius: 8px;
   background: rgba(250, 50, 0, 0.55);
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("OIP.webp");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("image/geste_SST.png");
   color: black;}
   
 .HACCP{

@@ -7,26 +7,45 @@
   <link rel="stylesheet" href="fichier.css" />
 </head>
 <body>
-  <header class="header-simple card1">
+  <header class="header-simple card">
     <nav class="header-nav card1 menu-principal"> <p>
 	 <strong>Site web :  <p><a href="index.html"><strong>index</strong></a>,<a href="experience.html"><strong>experience</strong></a>,<a href="formation.html"><strong>formation</strong>, <a href="Diplôme.html">Diplome <strong></a></strong>,</p></strong>
 			</nav>
     <h1>Formations — détails</h1>
   </header>
 
-  <main class="container">
+
+  <main id="conteneur_grid_form">
+  
+	<img id=fond src="image/pyramide_formation.png" >
+	<article id="conteneur_grid_form" class="card1 section SST">
+	
+      <h2>SST (Salarié sauveteur secouriste du travail)</h2>
+	  <img src = "image/SST.png"
+				alt="Photo de profil"
+				class="logo"/>
+      <p><!-- Détails : moyenne, appréciations, liens établissements --></p>
+      <p><a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40" target="_blank" rel="noopener">Site de l'établissement</a></p>
+    </article>
+  
+  
+   <article id="conteneur_grid_form" class="card1 section HACCP">
+      <h2>HACCP(Hazard Analysis Critical Control Points)</h2>
+      <p>Centre de Formation de l’Artisanat de Mulhouse | CMA Formation</p>
+      <p><a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40" target="_blank" rel="noopener">Site de l'établissement</a></p>
+    </article>
   
 	<!-- partie BTS SNIR-->
-    <article id="formation-bts" class="card1 section">
+    <section id="conteneur_grid_form" class="card1 section BTS">
       <h2>BTS Systèmes Numériques — option Informatique & Réseaux</h2>
       <h4>Projets :</h4>
       <ul>
         <li>Projet A — description courte et résultats</li>
         <li>Projet B — description courte et résultats</li>
       </ul>
-    </article>
+    </section>
 	<!-- partie Baccalaureat -->
-	 <article id="formation-bts" class="card1 section">
+	 <article id="conteneur_grid_form" class="card1 section Bac">
       <h2>Baccalaureat Général, spécialité MAthnématique, Physique-Chimie</h2>
       <p></p>
       <h4>Projets :</h4>
@@ -37,33 +56,58 @@
     </article>
 	
 
-    <article id="formation-iut" class="card1 section">
-      <h2>IUT Colmar — Réseaux & Télécommunication (en cours)</h2>
-      <p><!-- Détails de la formation, modules, particularités --></p>
+    <article id="conteneur_grid_form" class="card1 section IUT">
+      <h2>BUT Informatique – Université de Technologie de Colmar (2025/actuel</h2>
+      <p>Réseaux</p>
+      <p>Telecommunication</p>
+	  <p><a href="https://www.exemple-ecole.fr" target="_blank" rel="noopener">Site de l'établissement</a></p>
     </article>
-  </main>
+  
+</main>
 
-    <footer id="conteneur_grid_Foot" class = "Foot card1 ">
+    <footer id="conteneur_grid_Foot" class = "Foot card1">
     © 2025 Sichard Lommé - CV en ligne
 	
 	<p>
 		<a href="#"><strong>Retour en haut page</strong></a>
 	</p>
 		<div class="contact card1">
-			<p>
+			
 				<h3>Contact</h3>
-				<strong>Adresse :</strong>
-				<a href="https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse">5 Rue du Cygne, 68100 Mulhouse</a><br />
-				<strong>Email :</strong> sichardlomme@gmail.com<br />
-				<strong>Téléphone :</strong> +33 7 71 13 47 74<br />
+				<img src = "image/hd-black-modern-smartphone-icon-transparent-png-701751695058984iy1gpsaq1f.png"
+				alt="Photo de profil card1"
+				class="logo"/>
+				<p>
+				<div class="flexbox">
+					<div class="flex-item">
+					
+						<strong>Adresse :</strong>
+						<a href="https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse">5 Rue du Cygne, 68100 Mulhouse</a><br />
+						<strong>Email :</strong> sichardlomme@gmail.com<br />
+						<strong>Téléphone :</strong> +33 7 71 13 47 74<br />
+					</div>
+				</div>
 			</p>
 	  
 	</div>
-		<div class="Lien card1">
+		<div class=" Lien card">
+		<h3>Lien Web</h3>
+		<img src = "image/107-1073869_transparent-background-website-logo-hd-png-download.png"
+				alt="Photo de profil card"
+				class="logo"/>
 			<p>
-				<strong>LinkedIn :</strong><a href="#">linkedin.com/in/LomméSICHARD</a><br />
-				<strong>Github : </strong><a href="https://github.com/0PPA-art"> https://github.com/0PPA-art<br>
-				<a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html">Mon site internet</a>
+				<div class="flexbox">
+					<div class="flex-item">
+						
+						<p><img src = "image/LinkedIn_logo_initials.png"
+						alt="Photo de profil card"
+						class="logo"/><strong>LinkedIn :</strong><a href="#">linkedin.com/in/LomméSICHARD</a><br />
+						<img src = "image/logo_github.png"
+						alt="Photo de profil card"
+						class="logo"/><strong>Github : </strong><a href="https://github.com/0PPA-art"> https://github.com/0PPA-art<br>
+						<a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html">Mon site internet</a>
+					</div>
+				</div>
 			</p>
 		</div>
 	   
