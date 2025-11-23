@@ -500,12 +500,10 @@
 	  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(100,100,100,0.3)), url("image/iut-colmar.jpg");
 	  color: black;}
 
-  /*--------------------------------------------------------*/ 
-  
- /*---------------FIN partie pour mes grids Diplôme ----------------*/
- 
- /*--------------------------------------------------------*/ 
-/*---------------------- FIN partie grid du fichier html Diplôme---------------------*/
+/*--------------------------------------------------------*/ 
+/*---------------FIN partie pour mes grids Diplôme -------*/
+/*--------------------------------------------------------*/ 
+/*-------------- FIN partie grid du fichier html Diplôme-*/
 
 
 /*---------------------- partie grid du footer---------------------*/
@@ -543,19 +541,27 @@
 
 /* --------FIN Partie du footer------- */
 
+/*---------------------- FIN partie grid ---------------------*/
+
+
+
+   
+:root {/*---------------------- police de caractère ---------------------*/
+    --police: "Montserrat", sans-serif;
+}
 
 
 .photo-rond {
-max-width : 150px;
-border-radius: 30px;
-object-fit: cover;
-border: 4px solid var(--accent);
+	max-width : 150px;
+	border-radius: 30px;
+	object-fit: cover;
+	border: 4px solid var(--accent);
 }
 
 .logo {
-max-width : 50px;
-object-fit: cover;
-border: 4px solid var(--accent);
+	max-width : 50px;
+	object-fit: cover;
+	border: 4px solid var(--accent);
 }
 
   
@@ -590,12 +596,6 @@ border: 4px solid var(--accent);
  
  
 
-/*---------------------- FIN partie grid ---------------------*/
-   
-:root {
-    --police: "Montserrat", sans-serif;
-}
-
 /*--------- Application Globale ------------------*/
 
 
@@ -608,12 +608,13 @@ footer {
 	
 @media (max-width: 700px) {
       
-	.menu-principal {
+	* {
 		flex-wrap: wrap;
 		gap: .5rem;
+		
 	}
 
-	h1 {
+	* {
 		font-size: 1.8rem;
 	}
 }
@@ -622,97 +623,97 @@ footer {
 /*------------- partie pour mes titre h1------------*/
 
 h1 {
-font-size: 4rem;
-position: relative;
-text-transform: uppercase;
-letter-spacing: 4px;
-transition: color 0.3s ease;
+	font-size: 4rem;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	transition: color 0.3s ease;
 }
 
 h1::after {
-content: "";
-position: absolute;
-left: 0;
-bottom: -5px;
-height: 4px;
-width: 0%;
-background: linear-gradient(90deg, #00e5ff, #8c00ff);
-transition: width 0.4s ease;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	height: 4px;
+	width: 0%;
+	background: linear-gradient(90deg, #00e5ff, #8c00ff);
+	transition: width 0.4s ease;
 }
 
 
 h1:hover {
-color: #00e5ff;
+	color: #00e5ff;
 }
 
 
 h1:hover::after {
-width: 100%;
+	width: 100%;
 }
 /*------------- Fin partie pour mes titre h1 ------------*/
 /*------------- partie pour mes titre h2------------*/
 
 h2{
-position: relative;
-text-transform: uppercase;
-letter-spacing: 4px;
-transition: color 0.3s ease;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	transition: color 0.3s ease;
 }
 
 h2::after {
-content: "";
-margin: 15px;
-left: 0;
-bottom: -5px;
-height: auto;
-width: 0%;
-background: linear-gradient(90deg, #00e5ff, #8c00ff);
-transition: width 0.4s ease;
+	content: "";
+	margin: 15px;
+	left: 0;
+	bottom: -5px;
+	height: auto;
+	width: 0%;
+	background: linear-gradient(90deg, #00e5ff, #8c00ff);
+	transition: width 0.4s ease;
 }
 
 
 h2:hover {
-color: #00e5ff;
+	color: #00e5ff;
 }
 
 
 h2:hover::after {
-width: 100%;
+	width: 100%;
 }
 /*------------- Fin partie pour mes titre h2 ------------*/
 
 /*------------- partie pour mes lien ------------*/
 
 a {
-font-size: 1rem;
-color: #bbb;
-text-decoration: none;
-position: relative;
-margin: 0 1rem;
-transition: color 0.3s ease;
+	font-size: 1rem;
+	color: #bbb;
+	text-decoration: none;
+	position: relative;
+	margin: 0 1rem;
+	transition: color 0.3s ease;
 }
 
 a::before {
-content: "";
-position: absolute;
-left: 50%;
-top: 50%;
-width: 0%;
-height: 0%;
-background: radial-gradient(circle, rgba(100, 0, 255, 0.1), transparent);
-transform: translate(-50%, -50%);
-border-radius: 50%;
-transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0%;
+	height: 0%;
+	background: radial-gradient(circle, rgba(100, 0, 255, 0.1), transparent);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
 }
 
 a:hover {
-color: #0000ff;
+	color: #0000ff;
 }
 
 a:hover::before {
-width: 180%;
-height: 180%;
-opacity: 1;
+	width: 180%;
+	height: 180%;
+	opacity: 1;
 }
 
 /*------------- Fin partie pour mes lien ------------*/
@@ -757,31 +758,28 @@ margin : 0;
 
 
 .hero-header {
-display: flex;
-gap: 2rem;
-padding: 2rem;
-background: var(--bloc);
-align-items: center;
-flex-wrap: wrap;
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+	background: var(--bloc);
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 
-
-
-
 .flex-container {
-display: flex;
-gap: 1rem;
-flex-wrap: wrap;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 
 .flex-item {
-flex: 1 1 250px;
-background: var(--bloc);
-padding: 1rem;
-border-radius: 12px;
-border: 1px solid #ddd;
+	flex: 1 1 250px;
+	background: var(--bloc);
+	padding: 1rem;
+	border-radius: 12px;
+	border: 1px solid #ddd;
 }
 
 
@@ -903,17 +901,17 @@ border: 1px solid #ddd;
 /* ---------- Partie du animation pour le html index--------- */
   
   
-@keyframes pulseBorder {
-  from { box-shadow: 0 0 5px #00f0ff; border-color: #00f0ff; }
+@keyframes pulseBorder {/*effet de pulsation*/
+  from { box-shadow: 0 0 5px #00f0ff;/*contour lumineux avec des ombres */ border-color: #00f0ff; }
   to   { box-shadow: 0 0 20px #00f0ff; border-color: #00ffff; }
 }
 
-@keyframes pulseBorderRed {
+@keyframes pulseBorderRed {/*effet de pulsation*/
   from { box-shadow: 0 0 5px #8b0000; border-color: #8b0000; }
   to   { box-shadow: 0 0 20px #ff1a1a; border-color: #ff1a1a; }
 }
 
-/* Animation du balayage lumineux */
+/* Animation du balayage lumineux keyframes pulseBorder ou Red*/
 @keyframes shine {
   0%   { left: -75%; }
   100% { left: 125%; }
@@ -941,7 +939,7 @@ border: 1px solid #ddd;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
 }
 
-/* Effet lumineux de balayage */
+/* Partie Effet lumineux de balayage */
 .card::before{
       content: "";
       position: absolute;
@@ -956,24 +954,21 @@ border: 1px solid #ddd;
 
 /* --------------- Animation activée seulement au survol --------------------*/
 .card:hover::before {
-  animation: shine 1.2s ease-in-out;
+  animation: shine 1.2s ease-in-out; /* Effet lumineux de balayage */
   opacity: 1;
 }
   
-.card:nth-child(1):hover::before { animation-delay: 0s; }
+.card:nth-child(1):hover::before { animation-delay: 0s; } 	/* --------------- début de l'Animation --------------------*/
 .card:nth-child(2):hover::before { animation-delay: 0.1s; }
 .card:nth-child(3):hover::before { animation-delay: 0.2s; }
 .card:nth-child(4):hover::before { animation-delay: 0.3s; }
 .card:nth-child(5):hover::before { animation-delay: 0.4s; }
-  
-  /* -----------------fin du Animation du header ------------------- */
 
+/*-----------------------------------------------------------------*/  
+/* -----------------fin du Animation du header ------------------- */
+/*-----------------------------------------------------------------*/
 
-
-  
-  
-  
-   /* ---------- Partie du animation pour le html Experience--------- */
+/* ---------- Partie du animation pour le html Experience--------- */
 
 
 .card1 {

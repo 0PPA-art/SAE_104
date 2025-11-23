@@ -9,25 +9,31 @@
 
 <body style ="font-family: JetBrains Mono, monospace;">
 
-<header class="header-simple card">
-  <nav class="header-nav card1 menu-principal">
-    <p><strong>Site web :</strong></p>
-    <p>
-      <a href="index.html"><strong>Index</strong></a>,
-      <a href="experience.html"><strong>Expérience</strong></a>,
-      <a href="formation.html"><strong>Formation</strong></a>,
-      <a href="Diplôme.html"><strong>Diplôme</strong></a>
-    </p>
-  </nav>
+	<header class="header-simple card">
+  <nav class="header-nav card1 menu-principal"> 
+			<p class = "titre_exp"></p>
+				<input type="checkbox" id="site" class="toggle">
+				<label for="site" class = "titre-li">Site web : </label>
+				<div class="contenu-li">
+				<figure>
+				<p><a href="index.html"><strong>index</strong></a>
+				<a href="experience.html"><strong>experience</strong></a>
+				
+				<a href="formation.html"><strong>formation</strong> 
+				<a href="Diplôme.html"><strong>Diplome </a></strong></p>
+				</figure>							
+				</div>
+				
+			</nav>
 
-  <h2 style ="color: red"> Formations — détails</h2>
-</header>
+		<h2 style ="color: red"> Formations — détails</h2>
+	</header>
 
 <main id="conteneur_grid_form">
 
   <img id="fond" src="image/pyramide_formation.png" alt="Pyramide de formation">
 
-  <!-- SECTION SST -->
+  <!-- Partie foramtion SST -->
   <article id="conteneur_grid_SST" class="card2 section SST">
 
     <h2 class="TItre_SST">
@@ -47,7 +53,7 @@
 
   </article>
 
-  <!-- SECTION HACCP -->
+
   <article class="card2 section HACCP">
     <h2>
       <img src="image/bk-ambitions.png" alt="Logo HACCP" class="logo">
@@ -129,7 +135,6 @@
     </section>
   </section>
 
-  <!-- SECTION BAC -->
   <article id="conteneur_grid_form" class="card2 section Bac">
     <h2>Baccalauréat Général — spécialités Mathématiques & Physique-Chimie</h2>
 
@@ -141,7 +146,6 @@
     </ul>
   </article>
 
-  <!-- SECTION IUT -->
   <article id="conteneur_grid_IUT" class="card2 IUT">
 
     <section class="TIUT">

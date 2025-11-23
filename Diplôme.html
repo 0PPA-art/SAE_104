@@ -11,17 +11,21 @@
 <body style = "font-family: Poppins, sans-serif;">
 
 <header class="header-simple card1">
-  <nav class="header-nav card1 menu-principal">
-    <img id="fond" src="image/Dipleme.jpg" alt="Fond décoratif">
-
-    <p><strong>Site web :</strong></p>
-    <p>
-      <a href="index.html"><strong>Index</strong></a>,
-      <a href="experience.html"><strong>Expérience</strong></a>,
-      <a href="formation.html"><strong>Formation</strong></a>,
-      <a href="Diplôme.html"><strong>Diplôme</strong></a>
-    </p>
-  </nav>
+  <nav class="header-nav card1 menu-principal"> 
+		<p class = "titre_exp"></p>
+			<input type="checkbox" id="site" class="toggle">
+			<label for="site" class = "titre-li">Site web : </label>
+			<div class="contenu-li">
+			<figure>
+			<p><a href="index.html"><strong>index</strong></a>
+			<a href="experience.html"><strong>experience</strong></a>
+			
+			<a href="formation.html"><strong>formation</strong> 
+			<a href="Diplôme.html"><strong>Diplome </a></strong></p>
+			</figure>							
+			</div>
+			
+		</nav>
 
   <h2>Diplômes — détails</h2>
 </header>
@@ -30,7 +34,7 @@
   
   <img id="fond" src="image/vae-diplome.jpeg" alt="Diplôme" />
 
-  <!-- SECTION SST -->
+  <!-- partie de SST -->
   <article class="card1 section SST">
     <h2 style="background: rgba(250, 250, 250, 0.50);">
       SST (Sauveteur Secouriste du Travail)
@@ -49,8 +53,8 @@
       </a>
     </p>
   </article>
-
-  <!-- SECTION BTS -->
+ <!-- FIN partie de SST -->
+  <!-- partie de BTS -->
   <article class="card1 section BTS">
 
     <h2 class="T_Dip_BTS">
@@ -83,8 +87,8 @@
     </h2>
 
   </article>
-
-  <!-- SECTION BAC -->
+<!-- FIN partie de BTS -->
+  <!-- partie de BAC -->
   <article class="card1 section Bac">
 
     <h2 class="T_Dip_Bac">Baccalauréat Général</h2>
@@ -109,6 +113,7 @@
     </h2>
 
   </article>
+  <!-- FIN partie de BAC -->
 
 </main>
 
@@ -119,7 +124,7 @@
     <a href="#"><strong>Retour en haut de la page</strong></a>
   </p>
 
-  <!-- CONTACT -->
+
   <div class="contact card">
     <h3>Contact</h3>
 
@@ -139,7 +144,7 @@
     </div>
   </div>
 
-  <!-- LIENS WEB -->
+
   <div class="Lien card">
     <h3>Liens Web</h3>
 
