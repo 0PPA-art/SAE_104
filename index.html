@@ -2,21 +2,25 @@
 <html lang="fr">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="author" content="Nom Prénom">
-<meta name="keywords" content="CV, Réseaux, Télécoms, Étudiant, WebCV, Portfolio">
+<meta name="author" content="SICHARD Lommé">
+<meta name="keywords" content="CV, Réseaux, Télécoms, Étudiant, WebCV">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae — SiCHARD Lommé</title>
   <link rel="stylesheet" href="fichier.css">
   </head>
   
-<body>
+<body class = "body_index">
  
-	<header class="header-grid image-ronde">
+	<header class="header-grid image-ronde Head">
 
 	<nav class="header-nav card menu-principal"> 
 		<p>
-			<strong>Site web :  <p><a href="index.html"><strong>index</strong></a>,<a href="experience.html"><strong>experience</strong></a>,<a href="formation.html"><strong>formation</strong>, <a href="Diplôme.html">Diplome <strong></a></strong>,</p></strong>
+			<strong>Site web :  <p>
+			<a href="index.html"><strong>index</strong></a>,
+			<a href="experience.html"><strong>experience</strong></a>,
+			<a href="formation.html"><strong>formation</strong>, 
+			<a href="Diplôme.html">Diplome <strong></a></strong>,</p></strong>
 	</nav>
 
 	<div class="header-photo card">
@@ -25,26 +29,8 @@
 			alt="Photo de profil card"
 			class="photo-rond"
 		/>
-	</div>
-
-	<div class="header-title card">
 		<h2>CV SICHARD Lommé</h2>
 		<h2>Administrateur Réseaux</h2>
-	</div>
-
-
-	<div class="header-atout card">
-		<h3>Atouts :</h3>
-		<ul>
-			<li>Rigoureux</li>
-			<li>Organisé</li>
-			<li>Passionné</li>
-			<li>Coopératif</li>
-			<li>Autonome</li>
-		</ul>
-	</div>
-
-	<div class="header-profil card">
 		<h3>Profil :</h3>
 		<p>
 			SICHARD Lommé, diplômé en BTS Système numérique option informatique et
@@ -54,106 +40,121 @@
 			En recherche d'une alternance pour la rentrée 2026.
 		</p>
 	</div>
-  
-  
-	<section id="resume-en" class="Engl card">
+
+	<div class="header-profil card">
+		
+		<h3>Atouts :</h3>
+		<ul>
+			<li>Rigoureux</li>
+			<li>Organisé</li>
+			<li>Passionné</li>
+			<li>Coopératif</li>
+			<li>Autonome</li>
+		</ul>
+		
 		<h2>English Summary</h2>
 		<p>Lommé Sichard holds a BTS (Advanced Vocational Diploma) 
-		<br>in Digital Systems with a specialization in Computer Science and Networks.
-		<br>He is currently studying Networks & Telecommunications at the University Institute of Technology (IUT) in Colmar and is seeking a work-study placement starting in September 2026.</p>
-	</section>
-  
+		in Digital Systems with a specialization in Computer Science and Networks.
+		He is currently studying Networks & Telecommunications at the University Institute of Technology (IUT) in Colmar and is seeking a work-study placement starting in September 2026.</p>
+	</div>
+
 </header>
-
-
-<main id = "conteneur_grid">
-
-	<section class="Exp card">
+<main id = "conteneur_grid_case" class = "Body">
+	
+	<section id = "conteneur_grid_case_1" class=" card Import">
+		<section class="Exp">
 		<h2>Expérience professionnelle</h2>
-		<ul>
+		<ul class = "backblack">
 			<li><strong>Equipier polyvalent</strong> – Burger King - 36 Rue du Sauvage, 68100 Mulhouse - (Avril 2024 - Septembre 2025)</li>
 			<li><strong>Stage Technicien maintenance informatique</strong> – Qualtech IFBM - 7 Rue du Bois de la Champelle, 54500 Vandœuvre-lès-Nancy(Mai 2022 - Juillet 2022)</li>
 			<li><strong>Stage découvert</strong> – Beka - Av. des Jonquilles, 54500 Vandœuvre-lès-Nancy (Janvier 2017)</li>
 		</ul>
 		<a href="experience.html"><strong>Expériences</strong></a>
-    </section>
-
-    <section class="CompInfo card">
+		</section>
 	
-      <h2>Compétences informatiques</h2>
-	  <div class="flex-item">
-      <ul>
-        <li>HTML, CSS</li>
-        <li>JavaScript, Node.js</li>
-		<li>C, C++, C#, java, LUA</li>
-        <li>Git, GitHub, Gitdesktop</li>
-      </ul>
-	  </div>
-    </section>
-
-    <section class="Comp card">
 	
-      <h2>Compétences</h2>
-		<div class="flexbox">
-			<div class="flex-item">
-				<ul>
-					<li>Méthodes Agiles (SCRUM)</li>
-					<li>Architecture SI & Web</li>
-					<li>Paramétrer un logiciel, un outil, un système numérique</li>
-					<li>Rédiger et mettre à jour la documentation technique</li>
-					<li>Rédiger un cahier des charges, des spécifications techniques)</li>
-				</ul>
-			</div>
-		</div>	
-	  <a href="#competences"><strong>Compétences</strong></a>
-    </section>
-
-    <section class="Form card">
-      <h2>Formation</h2>
-      <ul>
+		<section class="Form">
+		<h2>Formation</h2>
+		<ul class = "backblack">
         <li>Licence Informatique – Université de Technologie de Colmar (2025/actuel)</li>
 		<li>HACCP()Formation Burger King (Mai 2024 -  Avril 2024 )</li>
 		<li>SST(Salarié sauveteur secouriste du travail)  </li>
 		<li>BTS Système numérique option A( Informatique et Réseau) - Lycée Charles de Foucauld Nancy (2021-2023) </li>
 		<li>Bac Général spécialité mathématique, physique-chimie -  Lycée Henri Loritz Nancy (2019 - 2021)</li>
-	  </ul>
-	  <a href="#formations"><strong>Formations</strong></a>
-    </section>
+		</ul>
+		<a href="#formations"><strong>Formations</strong></a>
+		</section>
+		
+		<section class = "Dip">
+		<h2>Diplôme</h2>
+		<ul class = "backblack">
+		<li>BTS Système numérique option A( Informatique et Réseau) - Lycée Charles de Foucauld Nancy (2023) </li>
+		<li>Bac Général spécialité mathématique, physique-chimie -  Lycée Henri Loritz Nancy(2021) </li>
+		<li>HACCP(Hazard Analysis Critical Control Points) - CFA Mulhouse(mars 2024) </li>
+		<li>SST(Salarié sauveteur secouriste du travail) - CFA Mulhouse</li>
+		</ul>
+		<a href="Diplôme.html"><strong>Diplômes</strong></a>
+		</section>
+		</section>
 	
-	<section class = "Dip card">
-	<h2>Diplôme</h2>
-      <ul>
-	<li>BTS Système numérique option A( Informatique et Réseau) - Lycée Charles de Foucauld Nancy (2023) </li>
-	<li>Bac Général spécialité mathématique, physique-chimie -  Lycée Henri Loritz Nancy(2021) </li>
-	<li>HACCP(Hazard Analysis Critical Control Points) - CFA Mulhouse(mars 2024) </li>
-	<li>SST(Salarié sauveteur secouriste du travail) - CFA Mulhouse</li>
-	</ul>
-	<a href="Diplôme.html"><strong>Diplômes</strong></a>
+	<section id ="conteneur_grid_case_2" class = "card Compt">
+    
+		<section class="CompInfo">
+	
+			<h2>Compétences informatiques</h2>
+				<div class="flex-item">
+					<ul class = "backblack">
+						<li>HTML, CSS</li>
+						<li>JavaScript, Node.js</li>
+						<li>C, C++, C#, java, LUA</li>
+						<li>Git, GitHub, Gitdesktop</li>
+					</ul>
+				</div>
+		</section>
+
+		<section class="Comp">
+	
+		<h2>Compétences</h2>
+			<div class="flexbox">
+				<div class="flex-item">
+					<ul class = "backblack">
+						<li>Méthodes Agiles (SCRUM)</li>
+						<li>Architecture SI & Web</li>
+						<li>Paramétrer un logiciel, un outil, un système numérique</li>
+						<li>Rédiger et mettre à jour la documentation technique</li>
+						<li>Rédiger un cahier des charges, des spécifications techniques)</li>
+					</ul>
+				</div>
+			</div>	
+			<a href="#competences"><strong>Compétences</strong></a>
+		</section>
+
+	
+	    <section class="Lang">
+			<h2>Langues</h2>
+				<ul class = "backblack">
+					<li>Français (natif)</li>
+					<li>Anglais (B2)</li>
+					<li>Allemand(B1)</li>
+				</ul>
+		</section>
+	
+
+		<section class="Hob">
+			<h2>Centres d’intérêt</h2>
+				<ul class = "backblack"><li>Échecs (chess.com)</li></ul>
+				<a href="#divers"><strong>Divers</strong></a>
+		</section>
 	</section>
 
-    <section class="Hob card">
-      <h2>Centres d’intérêt</h2>
-      <ul><li>Échecs (chess.com)</li></ul>
-	  <a href="#divers"><strong>Divers</strong></a>
-    </section>
-
-    <section class="Lang card">
-      <h2>Langues</h2>
-      <ul>
-        <li>Français (natif)</li>
-        <li>Anglais (B2)</li>
-		<li>Allemand(B1)</li>
-      </ul>
-    </section>
-	 
-
+	
     <footer id="conteneur_grid_Foot" class = "Foot card ">
     © 2025 Sichard Lommé - CV en ligne
 	
 	<p>
 		<a href="#"><strong>Retour en haut page</strong></a>
 	</p>
-		<div class="contact card">
+		<div class="contact card1">
 			
 				<h3>Contact</h3>
 				<img src = "image/hd-black-modern-smartphone-icon-transparent-png-701751695058984iy1gpsaq1f.png"
@@ -172,18 +173,18 @@
 			</p>
 	  
 	</div>
-		<div class=" Lien card">
+		<div class=" Lien card1">
 		<h3>Lien Web</h3>
 		<img src = "image/107-1073869_transparent-background-website-logo-hd-png-download.png"
 				alt="Photo de profil card"
 				class="logo"/>
 			<p>
-				<div class="flexbox">
+				<div class="flexbox ">
 					<div class="flex-item">
 						
 						<p><img src = "image/LinkedIn_logo_initials.png"
 						alt="Photo de profil card"
-						class="logo"/><strong>LinkedIn :</strong><a href="#">linkedin.com/in/LomméSICHARD</a><br />
+						class="logo"/><strong>LinkedIn :</strong><a href="www.linkedin.com/in/lomme-sichard-74a7b2255">linkedin.com/in/LomméSICHARD</a><br />
 						<img src = "image/logo_github.png"
 						alt="Photo de profil card"
 						class="logo"/><strong>Github : </strong><a href="https://github.com/0PPA-art"> https://github.com/0PPA-art<br>

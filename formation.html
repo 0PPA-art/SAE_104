@@ -3,115 +3,234 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Formations — SICHARD Lommé</title>
+  <title >Formations — SICHARD Lommé</title>
   <link rel="stylesheet" href="fichier.css" />
 </head>
-<body>
-  <header class="header-simple card">
-    <nav class="header-nav card1 menu-principal"> <p>
-	 <strong>Site web :  <p><a href="index.html"><strong>index</strong></a>,<a href="experience.html"><strong>experience</strong></a>,<a href="formation.html"><strong>formation</strong>, <a href="Diplôme.html">Diplome <strong></a></strong>,</p></strong>
-			</nav>
-    <h1>Formations — détails</h1>
-  </header>
 
+<body style ="font-family: JetBrains Mono, monospace;">
 
-  <main id="conteneur_grid_form">
-  
-	<img id=fond src="image/pyramide_formation.png" >
-	<article id="conteneur_grid_form" class="card1 section SST">
-	
-      <h2>SST (Salarié sauveteur secouriste du travail)</h2>
-	  <img src = "image/SST.png"
-				alt="Photo de profil"
-				class="logo"/>
-      <p><!-- Détails : moyenne, appréciations, liens établissements --></p>
-      <p><a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40" target="_blank" rel="noopener">Site de l'établissement</a></p>
-    </article>
-  
-  
-   <article id="conteneur_grid_form" class="card1 section HACCP">
-      <h2>HACCP(Hazard Analysis Critical Control Points)</h2>
-      <p>Centre de Formation de l’Artisanat de Mulhouse | CMA Formation</p>
-      <p><a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40" target="_blank" rel="noopener">Site de l'établissement</a></p>
-    </article>
-  
-	<!-- partie BTS SNIR-->
-    <section id="conteneur_grid_form" class="card1 section BTS">
-      <h2>BTS Systèmes Numériques — option Informatique & Réseaux</h2>
-      <h4>Projets :</h4>
-      <ul>
-        <li>Projet A — description courte et résultats</li>
-        <li>Projet B — description courte et résultats</li>
-      </ul>
+<header class="header-simple card">
+  <nav class="header-nav card1 menu-principal">
+    <p><strong>Site web :</strong></p>
+    <p>
+      <a href="index.html"><strong>Index</strong></a>,
+      <a href="experience.html"><strong>Expérience</strong></a>,
+      <a href="formation.html"><strong>Formation</strong></a>,
+      <a href="Diplôme.html"><strong>Diplôme</strong></a>
+    </p>
+  </nav>
+
+  <h2 style ="color: red"> Formations — détails</h2>
+</header>
+
+<main id="conteneur_grid_form">
+
+  <img id="fond" src="image/pyramide_formation.png" alt="Pyramide de formation">
+
+  <!-- SECTION SST -->
+  <article id="conteneur_grid_SST" class="card2 section SST">
+
+    <h2 class="TItre_SST">
+      <img src="image/SST.png" alt="Logo SST" class="logo">
+      SST (Sauveteur Secouriste du Travail) - Mars 2024
+    </h2>
+
+    <ul class="backwhite Prog">
+      <h3>Programme de la séance</h3>
+      <li>Apprentissage des gestes de premiers secours.</li>
+      <li>Prévention en cas de catastrophe, attentat terroriste, accident du travail ou domestique, blessures.</li>
+    </ul>
+
+    <section class="Time_form">
+      <p class="backwhite">Durée : 1 semaine</p>
     </section>
-	<!-- partie Baccalaureat -->
-	 <article id="conteneur_grid_form" class="card1 section Bac">
-      <h2>Baccalaureat Général, spécialité MAthnématique, Physique-Chimie</h2>
-      <p></p>
-      <h4>Projets :</h4>
-      <ul>
-        <li>Projet A — description courte et résultats</li>
-        <li>Projet B — description courte et résultats</li>
-      </ul>
-    </article>
-	
 
-    <article id="conteneur_grid_form" class="card1 section IUT">
-      <h2>BUT Informatique – Université de Technologie de Colmar (2025/actuel</h2>
-      <p>Réseaux</p>
-      <p>Telecommunication</p>
-	  <p><a href="https://www.exemple-ecole.fr" target="_blank" rel="noopener">Site de l'établissement</a></p>
-    </article>
-  
+  </article>
+
+  <!-- SECTION HACCP -->
+  <article class="card2 section HACCP">
+    <h2>
+      <img src="image/bk-ambitions.png" alt="Logo HACCP" class="logo">
+      HACCP (Hazard Analysis Critical Control Points) - Avril 2024
+    </h2>
+
+    <ul class="backwhite">
+      <h3>Objectifs</h3>
+      <li>Apprentissage des gestes et pratiques garantissant la propreté des lieux publics et professionnels.</li>
+      <li>Apprentissage du comportement et de l’attitude adaptée en présence d’un client.</li>
+    </ul>
+
+    <ul class="backwhite">
+      <p>Centre de Formation de l’Artisanat de Mulhouse | CMA Formation</p>
+      <p><a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40" target="_blank" rel="noopener">Lien Google Maps : CMA Formation</a></p>
+    </ul>
+  </article>
+
+  <!-- SECTION BTS -->
+  <section id="conteneur_grid_BTS" class="card2 section BTS">
+
+    <section class="TBTS">
+      <h2>BTS Systèmes Numériques — option Informatique & Réseaux</h2>
+    </section>
+
+    <section class="LBTS">
+      <h4>Établissement : Lycée Charles de Foucauld</h4>
+
+      <p>
+        <a href="https://maps.google.com/maps?hl=fr&gl=fr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x47919df819b04aff:0x7da416e860aaca40"
+        target="_blank" rel="noopener">
+          Lien Google Maps : Lycée Charles de Foucauld
+        </a>
+      </p>
+
+      <img src="image/photo_satelite.png" alt="Vue satellite de l’établissement">
+    </section>
+
+    <section class="Proj">
+
+      <ul>
+        <h4>Projets :</h4>
+
+        <li>
+          <h3>Projet 1ère année : Gestion de feux de route</h3>
+          Savoir gérer les feux d’un carrefour selon un cahier des charges. (Projet scolaire)
+        </li>
+
+        <li>
+          <h3>Stage de 1ère année en milieu professionnel :</h3>
+          Technicien de maintenance informatique – Qualtech IFBM  
+          <br>Voir mes expériences professionnelles : <a href="experience.html"><strong>Expérience</strong></a>
+        </li>
+
+        <li>
+          <h3>Projet BTS : Barrière de passage routier</h3>
+          Conception d’une barrière à capteurs infrarouges permettant la détection et la collecte
+          d’informations sur les véhicules.
+          <br>Voir sur mon GitHub : <a href="index.html"><strong>Index</strong></a>
+        </li>
+      </ul>
+
+      <ul>
+        <h4>Compétences en programmation :</h4>
+        <li>C</li>
+        <li>C++</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript / Node.js</li>
+        <li>Shell</li>
+      </ul>
+
+      <ul>
+        <h4>Réseaux :</h4>
+        <li>CISCO : DHCP, DNS, serveurs web, réseaux locaux, WAN</li>
+        <li>Architecture réseau</li>
+        <li>Protocoles fondamentaux</li>
+      </ul>
+
+    </section>
+  </section>
+
+  <!-- SECTION BAC -->
+  <article id="conteneur_grid_form" class="card2 section Bac">
+    <h2>Baccalauréat Général — spécialités Mathématiques & Physique-Chimie</h2>
+
+    <h4>Établissement : Lycée Général et Technologique Henri Loritz</h4>
+
+    <ul>
+      <li>Classe de Première Générale : spécialité Sciences de l’Ingénieur</li>
+      <li>Classe de Terminale Générale : passage des épreuves finales du baccalauréat</li>
+    </ul>
+  </article>
+
+  <!-- SECTION IUT -->
+  <article id="conteneur_grid_IUT" class="card2 IUT">
+
+    <section class="TIUT">
+      <h2>BUT Informatique – Université de Haute-Alsace, Colmar (2025 – actuel)</h2>
+    </section>
+
+    <ul class="DIUT">
+      <h3>Réseaux et Télécommunications</h3>
+      <li>CISCO : DHCP, DNS, serveur web, réseaux locaux, WAN</li>
+      <li>Principes et architecture des réseaux</li>
+      <li>Mathématiques du signal</li>
+      <li>Mathématiques des transmissions</li>
+      <li>Bases des systèmes d’exploitation</li>
+      <li>Architecture des systèmes numériques et informatiques</li>
+      <li>Introduction aux technologies web</li>
+      <li>Fondamentaux de l’électronique</li>
+      <li>Fondamentaux de la programmation</li>
+    </ul>
+
+    <section class="LIUT card1">
+      <p class="LIUT card2">
+        <a href="https://www.iutcolmar.uha.fr" target="_blank" rel="noopener">Site de l’établissement</a><br>
+        <strong>Adresse :</strong> 34 Rue du Grillenbreit, 68000 Colmar
+      </p>
+    </section>
+
+    <section class="IIUT">
+      <img src="image/photo_satellite-UHAcolmar.png" class="IIUT" alt="Vue satellite IUT de Colmar">
+    </section>
+
+  </article>
+
 </main>
 
-    <footer id="conteneur_grid_Foot" class = "Foot card1">
-    © 2025 Sichard Lommé - CV en ligne
-	
-	<p>
-		<a href="#"><strong>Retour en haut page</strong></a>
-	</p>
-		<div class="contact card1">
-			
-				<h3>Contact</h3>
-				<img src = "image/hd-black-modern-smartphone-icon-transparent-png-701751695058984iy1gpsaq1f.png"
-				alt="Photo de profil card1"
-				class="logo"/>
-				<p>
-				<div class="flexbox">
-					<div class="flex-item">
-					
-						<strong>Adresse :</strong>
-						<a href="https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse">5 Rue du Cygne, 68100 Mulhouse</a><br />
-						<strong>Email :</strong> sichardlomme@gmail.com<br />
-						<strong>Téléphone :</strong> +33 7 71 13 47 74<br />
-					</div>
-				</div>
-			</p>
-	  
-	</div>
-		<div class=" Lien card">
-		<h3>Lien Web</h3>
-		<img src = "image/107-1073869_transparent-background-website-logo-hd-png-download.png"
-				alt="Photo de profil card"
-				class="logo"/>
-			<p>
-				<div class="flexbox">
-					<div class="flex-item">
-						
-						<p><img src = "image/LinkedIn_logo_initials.png"
-						alt="Photo de profil card"
-						class="logo"/><strong>LinkedIn :</strong><a href="#">linkedin.com/in/LomméSICHARD</a><br />
-						<img src = "image/logo_github.png"
-						alt="Photo de profil card"
-						class="logo"/><strong>Github : </strong><a href="https://github.com/0PPA-art"> https://github.com/0PPA-art<br>
-						<a href="file://///uha.fr/Users/e2506243/Bureau/CV%20web%20Sichard%20Lomm%C3%A9.html">Mon site internet</a>
-					</div>
-				</div>
-			</p>
-		</div>
-	   
-    </footer>
-</body>
+<footer id="conteneur_grid_Foot" class="Foot card1" style="background: rgba(50, 50, 50, 0.50);">
 
+  <p style="color: white;">
+    <a href="#"><strong>Retour en haut de la page</strong></a><br>
+    © 2025 Sichard Lommé — CV en ligne
+  </p>
+
+  <div class="contact card">
+    <h3>Contact</h3>
+
+    <img src="image/hd-black-modern-smartphone-icon-transparent-png-701751695058984iy1gpsaq1f.png"
+    alt="Icône téléphone" class="logo">
+
+    <div class="flexbox">
+      <div class="flex-item">
+        <strong>Adresse :</strong>
+        <a href="https://www.google.com/maps/place/5+Rue+du+Cygne,+68100+Mulhouse">5 Rue du Cygne, 68100 Mulhouse</a><br>
+
+        <strong>Email :</strong> sichardlomme@gmail.com<br>
+        <strong>Téléphone :</strong> +33 7 71 13 47 74<br>
+      </div>
+    </div>
+  </div>
+
+  <div class="Lien card">
+    <h3>Liens Web</h3>
+
+    <img src="image/107-1073869_transparent-background-website-logo-hd-png-download.png"
+    alt="Icône Web" class="logo">
+
+    <div class="flexbox">
+      <div class="flex-item">
+
+        <p>
+          <img src="image/LinkedIn_logo_initials.png" alt="Logo LinkedIn" class="logo">
+          <strong>LinkedIn :</strong>
+          <a href="#">linkedin.com/in/LomméSICHARD</a>
+        </p>
+
+        <p>
+          <img src="image/logo_github.png" alt="Logo GitHub" class="logo">
+          <strong>GitHub :</strong>
+          <a href="https://github.com/0PPA-art" target="_blank">github.com/0PPA-art</a>
+        </p>
+
+        <p>
+          <a href="CV%20web%20Sichard%20Lomm%C3%A9.html">Mon site internet</a>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
 </html>
