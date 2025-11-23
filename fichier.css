@@ -21,7 +21,8 @@
     background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
     background-size: cover;
     background-position: center;
-    min-width: 0; /* évite forcer la largeur hors écran */
+       min-width: 200px;
+    min-height: 150px;
 	flex: 1 1 100px;
 }
 
@@ -40,7 +41,8 @@
 		align-items: start;
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 100px;
 }
 
@@ -59,7 +61,8 @@
 		align-items: start;
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 100px;
 }
 
@@ -81,7 +84,8 @@
 		background-image: url("https://images.unsplash.com/photo-1710438399422-2fca27686bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhaXQlMjBzb21icmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000");
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 100px;
 }
 
@@ -249,7 +253,8 @@
 		align-items: start;
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 50px;
 }
 
@@ -303,7 +308,8 @@
 		align-items: start;	
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 50px;
 }
 .TIUT{ grid-area: TIUT;background: rgba(250, 250, 250, 0.50)}
@@ -324,7 +330,8 @@
 		align-items: start;	
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 50px;
 }
 .Prog{ grid-area: Prog;background: rgba(250, 250, 250, 0.50)}
@@ -344,7 +351,8 @@
 		align-items: start;	
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 50px;
 }
 .Proj{ grid-area: Proj;background: rgba(250, 250, 250, 0.50);}
@@ -367,7 +375,8 @@
 		align-items: start;	
 		background-size: cover;
 		background-position: center;
-		min-width: 0; /* évite forcer la largeur hors écran */
+		    min-width: 200px;
+    min-height: 150px;
 		flex: 1 1 50px;
 }
 
@@ -391,7 +400,8 @@
     align-items: start;
     background-size: cover;
     background-position: center;
-    min-width: 0; /* évite forcer la largeur hors écran */
+        min-width: 200px;
+    min-height: 150px;
 	flex: 1 1 50px;
 }
 
@@ -409,7 +419,8 @@
     align-items: start;
     background-size: cover;
     background-position: center;
-    min-width: 0; /* évite forcer la largeur hors écran */
+        min-width: 200px;
+    min-height: 150px;
 	flex: 1 1 50px;
 }
 .T_Dip_Bac{
@@ -435,7 +446,8 @@
     align-items: start;
     background-size: cover;
     background-position: center;
-    min-width: 0; /* évite forcer la largeur hors écran */
+    min-width: 200px;
+    min-height: 150px;
 	flex: 1 1 50px;
 }
 .T_Dip_BTS{
@@ -525,6 +537,56 @@
 /*---------------------- FIN partie grid du footer---------------------*/
 
  
+ 
+
+@media (max-width: 800px) {
+    body {
+        font-size: 1.2rem; 
+    }
+    #conteneur_grid_case_1 {
+        grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_case_2 {
+        grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_case {
+        grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_Body { 
+	grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_Foot { 
+	grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_Dip_BTS {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_Dip_BAC {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_Dip {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_form {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_BTS {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_IUT {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_SST {
+		grid-template-columns: 1fr; 
+    }
+	#conteneur_grid_exp {
+		grid-template-columns: 1fr; 
+    }
+}
+
+body, html {
+    overflow-x: hidden; 
+}
 
  
 /* --------Partie du footer------- */
@@ -606,18 +668,6 @@ footer {
 }
 
 	
-@media (max-width: 700px) {
-      
-	* {
-		flex-wrap: wrap;
-		gap: .5rem;
-		
-	}
-
-	* {
-		font-size: 1.8rem;
-	}
-}
 
 
 /*------------- partie pour mes titre h1------------*/
@@ -731,6 +781,7 @@ a:hover::before {
     overflow:scroll;
     height : 100vh;
 }
+
 
 
 /*--------- FIN  des Applications Globales ------------------*/
@@ -931,6 +982,8 @@ margin : 0;
   
    border: 2px solid #00f0ff;
   animation: pulseBorder 2s infinite alternate;
+  box-sizing: border-box; 
+  width: 100%; 
 }
 
 /* petit effet de zoom au survol */
@@ -985,6 +1038,9 @@ margin : 0;
   
    border: 2px solid #00f0ff;
   animation: pulseBorder 2s infinite alternate;
+  
+  box-sizing: border-box; 
+  width: 100%;
 }
 
 /* petit effet de zoom au survol */
@@ -1042,6 +1098,9 @@ margin : 0;
   
    border: 2px solid #ff0000;
    animation: pulseBorderRed 2s infinite alternate; /*animation de pulsation de keyframes pulseBorderRed*/
+
+	box-sizing: border-box; 
+	width: 100%;
 }
 
 
